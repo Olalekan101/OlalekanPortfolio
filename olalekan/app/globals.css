@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+    .navtext {
+        @apply text-[12px] sm:text-[16px]
+    }
+    .hoverbutton{
+        @apply hover:bg-yellow-500 transition-all duration-300 ease-in-out
+    }
+}

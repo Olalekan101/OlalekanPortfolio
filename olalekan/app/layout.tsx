@@ -1,12 +1,13 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Roboto_Mono } from 'next/font/google'
+import Navbar from "./Components/Navbar/page"
 
 export const metadata = {
   title: 'Olalekan Portfolio',
   description: "This site is Olalekan's portfolio for web development and motion design."
 }
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto_Mono({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
@@ -14,8 +15,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className={roboto.className} >
+      <body className=' flex flex-col min-h-screen px-4 md:px-8 lg:px-32 bg-darkColor text-lightColor' >
+        <Navbar/>
+        {children}
+        </body>
     </html>
   )
 }
