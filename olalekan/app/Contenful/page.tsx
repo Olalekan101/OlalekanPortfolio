@@ -10,7 +10,7 @@ type entryType ={
   entryValue:object
 }
 
-export default async function Contenfull(){
+export async function Contenfull(){
     const res = await client.getEntries({content_type:"heroSection"}).
     then((entry:entryType)=>{
         return entry
@@ -19,3 +19,13 @@ export default async function Contenfull(){
     return data
   
 }
+export async function WebSitePortifolios(){
+    const res = await client.getEntries({content_type:"webSitePortifolios"}).
+    then((entry:entryType)=>{
+        return entry
+    })
+    const data = res.items
+    return data
+  
+}
+

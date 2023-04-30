@@ -1,6 +1,7 @@
 import './globals.css'
 import { Roboto_Mono } from 'next/font/google'
-import Navbar from "./Components/Navbar/page"
+import Navbar from "./Navbar/page"
+import Footer from './Footer/page'
 
 export const metadata = {
   title: 'Olalekan Portfolio',
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className=' scrollbar scrollbar-thumb-darkColorLight scrollbar-track-slate-500 overflow-x-clip flex flex-col min-h-screen px-4 md:px-8 lg:px-32 bg-darkColor text-lightColor' >
         <Navbar/>
         {children}
+        <Footer/>
         </body>
     </html>
   )

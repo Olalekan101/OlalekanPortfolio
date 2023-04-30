@@ -14,7 +14,7 @@ export default function HeroSection() {
           
           <HeroImgPortiart/>
 
-          <div className=" sm:hidden flex justify-center w-full h-[150px] overflow-clip" >
+          <div className=" sm:hidden flex justify-center w-full h-[150px] overflow-clip " >
           <HeroImgLandsacape/>
           </div>
 
@@ -27,11 +27,11 @@ export default function HeroSection() {
         </div>
        
     </div>
-        {/* Social Media Links */}
+        {/* Social Media Links Desktop */}
         <div className="lg:fixed bottom-0 left-0 hidden lg:block " >
         <div className="  md:w-[32px] lg:w-[128px] " >
         <div className=" flex flex-col justify-center items-center gap-4 " >
-          <SocialMediaComp  className="flex flex-col gap-4" height="25px" width="25px" />            
+          <SocialMediaComp  className="flex flex-col gap-4" height="20px" width="20 px" />            
           <hr className="rotate-180 h-[70px] w-[2px] bg-lightColor/40" />
           </div>
         </div>

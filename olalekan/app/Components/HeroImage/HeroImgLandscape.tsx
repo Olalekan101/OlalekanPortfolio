@@ -8,7 +8,7 @@ export default function HeroImgLandsacape() {
         <div className="  overflow-clip  ">
             <div className=" relative flex gap-2 justify-center " >
                  <img
-                 src='./Olalekan.webp'
+                 src='./OlalekanImage/Olalekan.webp'
                  alt="Web tech stack"
                  className="w-[100%] h-[100%] object-scale-down "
                  />

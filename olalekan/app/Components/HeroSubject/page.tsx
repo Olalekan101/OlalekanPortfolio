@@ -1,4 +1,4 @@
-import Contenfull from "@/app/Contenful/page"
+import {Contenfull} from "@/app/Contenful/page"
 import HerobuttonNwork from "./HerobuttonNwork";
 import WebdevIcons from "../WebdevIcons/WebdevIcons";
 import MotionIcons from "../MotionIcons/MotionIcons";

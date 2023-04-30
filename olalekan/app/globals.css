@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    scroll-behavior: smooth;
+    --sunday: #1e90ff
+}
+
+
 @layer components{
     .navtext {
         @apply text-[12px] sm:text-[16px]

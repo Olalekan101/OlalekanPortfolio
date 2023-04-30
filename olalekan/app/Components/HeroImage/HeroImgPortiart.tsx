@@ -1,33 +1,24 @@
-"use client"
 
-import { motion } from "framer-motion"
 
 export default function HeroImgPortiart() {
     
   return (
     <div className="relative hidden sm:flex ">
-        <div>
+          {/* Loading Text Placeholder */}
 
-          {/* Image Section 1 */}
+          {/* <div className="absolute flex h-full w-full -z-50" >
+            <h2 className=" my-auto text-center font-black opacity-50 text-6xl" >Olalekan<br/>Esanola </h2>
+          </div> */}
+
+       {/* Image Section 1 */}
+        <div>
           
-       <motion.div className="relative"
-       initial={{
-        opacity:0,
-        x:-10
-       }}
-       animate={{
-        opacity:1,
-        x:0,
-        transition:{
-          duration:0.5,
-          ease:"easeOut"
-        }
-       }}
+       <div className=" animate-xMove [--animationDelay:100ms] opacity-0 translate-x-[-15px] "
        >
        <div className=" w-[200px] h-[300px] bg-lightColor rounded-tl-[107px] rounded-tr-[29px] rounded-bl-[175px] rounded-br-[175px] mt-9 overflow-clip border-4 border-lightColor ">
             <div className=" w-full h-full " >
                  <img
-                 src='./OlalekanPortiait.jpg'
+                 src='./OlalekanImage/OlalekanPortiait.jpg'
                  alt="Web tech stack"
                  className="object-cover w-full h-full "
                  />
@@ -35,31 +26,18 @@ export default function HeroImgPortiart() {
         </div>
         <div className="w-[200px] h-[300px] bg-stone-950/30 inset-0 -translate-x-6 -translate-y-2 absolute -z-40 rounded-tl-[107px] rounded-tr-[29px] rounded-bl-[175px] rounded-br-[175px] mt-9 overflow-clip  ">
         </div>
-        </motion.div>
+        </div>
 
         {/* Image Section 2 */}
 
        <div className="absolute inset-0 translate-x-1/3 -z-10 opacity-50">
-       <motion.div className="relative"
-        initial={{
-          opacity:0,
-          x:-10
-         }}
-         animate={{
-          opacity:1,
-          x:0,
-          transition:{
-            duration:0.5,
-            ease:"easeOut",
-            delay:0.2
-          }
-         }}
+       <div className="relative animate-xMove [--animationDelay:400ms] opacity-0 translate-x-[-15px] "
        >
        <div className=" w-[200px] h-[300px] bg-lightColor rounded-tl-[107px] rounded-tr-[29px] rounded-bl-[175px] rounded-br-[175px] mt-9 overflow-clip border-4 border-lightColor ">
 
             <div className=" relative w-full h-full " >
                  <img
-                 src='./codeBg1.jpg'
+                 src='HeroImages/codeBg1.jpg'
                  alt="Web tech stack"
                  className="object-cover w-full h-full  "
                  />
@@ -69,30 +47,17 @@ export default function HeroImgPortiart() {
 
         {/* <div className="w-[200px] h-[300px] bg-stone-950/30 -inset-x-7 inset-y-4 absolute -z-40 rounded-tl-[107px] rounded-tr-[29px] rounded-bl-[175px] rounded-br-[175px] mt-9 overflow-clip  ">
         </div> */}
-        </motion.div>
+        </div>
 
         {/* Image Section 3 */}
 
         <div className="absolute inset-0 translate-x-1/3 -z-20 opacity-25">
-       <motion.div className="relative"
-         initial={{
-          opacity:0,
-          x:-10
-         }}
-         animate={{
-          opacity:1,
-          x:0,
-          transition:{
-            duration:0.5,
-            ease:"easeOut",
-            delay:0.4
-          }
-         }}
+       <div className="relative animate-xMove [--animationDelay:700ms] opacity-0 translate-x-[-15px] "
        >
        <div className=" w-[200px] h-[300px] bg-lightColor rounded-tl-[107px] rounded-tr-[29px] rounded-bl-[175px] rounded-br-[175px] mt-9 overflow-clip border-4 border-lightColor ">
             <div className=" relative w-full h-full " >
                  <img
-                 src='codeBg2.jpg'
+                 src='HeroImages/codeBg2.jpg'
                  alt="Web tech stack"
                  className="object-cover w-full h-full  "
                  />
@@ -102,7 +67,7 @@ export default function HeroImgPortiart() {
 
         {/* <div className="w-[200px] h-[300px] bg-stone-950/30 -inset-x-7 inset-y-4 absolute -z-40 rounded-tl-[107px] rounded-tr-[29px] rounded-bl-[175px] rounded-br-[175px] mt-9 overflow-clip  ">
         </div> */}
-        </motion.div>
+        </div>
        </div>
        </div>
         </div>
