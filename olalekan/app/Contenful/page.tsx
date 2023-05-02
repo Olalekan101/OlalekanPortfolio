@@ -28,4 +28,13 @@ export async function WebSitePortifolios(){
     return data
   
 }
+export async function AboutSection(){
+    const res = await client.getEntries({content_type:"aboutSection"}).
+    then((entry:entryType)=>{
+        return entry
+    })
+    const data = res.items
+    return data
+  
+}
 

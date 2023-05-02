@@ -6,7 +6,7 @@ export default function Navbar() {
         <div className=" w-full flex justify-between align-middle items-center py-2 lg:py-3 md:py-3" >
             <h1 className="max-sm:hidden" >Olalekan</h1>
             <ul className="flex navtext justify-center w-full gap-4 opacity-80 sm:opacity-90 sm:gap-6 " >
-                <li className="" ><a href="#Work" >Work</a></li>
+                <li className="" ><a href="#Projects" >Projects</a></li>
                 <li className="" ><a href="#About" >About</a></li>
                 <li className="" ><a href="#Contact" >Contact</a></li>
             </ul>

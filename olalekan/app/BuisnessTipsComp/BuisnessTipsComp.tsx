@@ -27,7 +27,8 @@ export default function BuisnessTipsComp() {
         <BuisnessTips className=" [--animationDelay:600ms] " >
             Putting your business online gives you access
         </BuisnessTips>
-
+        {/* Project id */}
+        <div id="Projects" ></div>
     </div>
   )
 }

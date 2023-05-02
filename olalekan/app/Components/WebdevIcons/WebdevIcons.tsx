@@ -1,5 +1,5 @@
 
-import Contenfull from "@/app/Contenful/page"
+import {Contenfull} from "@/app/Contenful/page"
 import Image from "next/image"
 
 

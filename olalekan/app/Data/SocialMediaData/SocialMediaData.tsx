@@ -1,8 +1,13 @@
-import { Instragram,Linkedin,Twitter,Whatsapp } from "../../Components/SocialMediaIcons/SocialMediaIcons"
+import { Instragram,Linkedin,Twitter,Whatsapp,Github } from "../../Components/SocialMediaIcons/SocialMediaIcons"
 
     const ClassValue = "object-contain w-full h-full"
 
 export const SocialData =[
+    {
+        Name: "Github",
+        Icon: <Github className={ClassValue} />,
+        Link: "https://github.com/Olalekan101"
+    },
     {
         Name: "Whatsapp",
         Icon: <Whatsapp className={ClassValue} />,
@@ -18,9 +23,5 @@ export const SocialData =[
         Icon: <Twitter className={ClassValue} />,
         Link: "https://www.linkedin.com/in/olalekan-esanola-0ba69a1b7/"
     },
-    {
-        Name: "Instagram",
-        Icon: <Instragram className={ClassValue} />,
-        Link: "https://www.linkedin.com/in/olalekan-esanola-0ba69a1b7/"
-    }
+
 ]

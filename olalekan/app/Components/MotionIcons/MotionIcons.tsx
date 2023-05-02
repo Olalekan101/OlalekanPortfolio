@@ -1,4 +1,4 @@
-import Contenfull from "@/app/Contenful/page"
+import {Contenfull} from "@/app/Contenful/page"
 import Image from "next/image"
 
 export default async function MotionIcons() {
