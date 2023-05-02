@@ -1,5 +1,5 @@
-import './globals.css'
 import { Roboto_Mono } from 'next/font/google'
+import './globals.css'
 import Navbar from "./Navbar/page"
 import Footer from './Footer/page'
 
@@ -8,7 +8,7 @@ export const metadata = {
   description: "This site is Olalekan's portfolio for web development and motion design."
 }
 
-const roboto = Roboto_Mono({ subsets: ['latin'] })
+const roboto = Roboto_Mono({ subsets: ['latin'],display: 'swap', })
 
 export default function RootLayout({
   children,

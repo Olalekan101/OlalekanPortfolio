@@ -1,15 +1,14 @@
-import { WebSitePortifolios } from "@/app/Contenful/page"
+import { WebSitePortifolios } from "@/app/Contenful/ContenfulData"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import {BsGithub} from "react-icons/bs"
+import Image from "next/image";
 
 
 export default async function WebAndPhoneMockup() {
 
   const data = await WebSitePortifolios()
   // const {desktopSiteImages,process,mobileSiteImages,technologyUsed} = data.fields
-  const dataRange = data?.slice(0,2)
-  console.log(dataRange);
-  
+  // const dataRange = data?.slice(0,2)  
 
   return (
     <>
@@ -19,19 +18,23 @@ export default async function WebAndPhoneMockup() {
           {/* Desktop Version */}
         <div key={x.sys.id} className=" relative shrink-0 flex overflow-auto scrollbar-thin snap-mandatory snap-center h-full w-full sm:w-[50%]  rounded-md " >
        {x.fields.desktopSiteImages?.map(img=>(
-             <img
+             <Image
              src={"https:" + img.fields.file.url}
              alt="Website Sample images"
              className="object-cover w-auto h-auto"
+             width={500}
+             height={500}
              />
        ))}
         {/* Mobile display */}
         <div className="absolute overflow-hidden scroll bottom-0 right-0 w-[100px] h-[150px] mr-2 mb-2 border-2 rounded-md bg-lightColor border-lightColor/50 " >
         {x.fields.mobileSiteImages?.map(img=>(
-             <img
+             <Image
              src={"https:" + img.fields.file.url}
              alt="Mobile Sample images"
              className="object-cover w-full h-full"
+             width={100}
+             height={150}
              />
        ))} 
         </div>
@@ -46,10 +49,12 @@ export default async function WebAndPhoneMockup() {
         <div className=" flex gap-2 justify-between " >
         <div className="relative w-[25px] h-[25px] flex gap-2 opacity-50" >
         {x.fields.technologyUsed?.map(img=>(
-             <img
+             <Image
              src={"https:" + img.fields.file.url}
              alt="Website Sample images"
              className="object-contain w-full h-full"
+             width={25}
+             height={25}
              />
        ))}
         </div>

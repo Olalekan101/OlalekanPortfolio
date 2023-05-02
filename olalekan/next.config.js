@@ -5,6 +5,9 @@ const nextConfig = {
   },
   images:{
     domains:['images.ctfassets.net']
+  },
+  eslint:{
+    ignoreDuringBuilds:true
   }
 }
 

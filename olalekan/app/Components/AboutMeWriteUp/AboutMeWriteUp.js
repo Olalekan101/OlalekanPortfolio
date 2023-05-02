@@ -1,7 +1,7 @@
 "use client"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { useToggle } from "usehooks-ts"
-import { AboutSection } from "../../Contenful/page"
+import { AboutSection } from "../../Contenful/ContenfulData"
 import { useEffect, useState } from "react"
 import {AiOutlineDown} from "react-icons/ai"
 import { useScreen } from 'usehooks-ts'
@@ -10,10 +10,11 @@ import { useScreen } from 'usehooks-ts'
 export default function AboutMeWriteUp() {
 
     const [value, toggle, setValue] = useToggle()
-    const [data , setData] = useState()
-    const customToggle = () => setValue((x: boolean) => !x)
+    const [data , setData] = useState([])
+    const customToggle = () => setValue((x) => !x)
     const screen = useScreen()
     const mainSize = screen?.width
+    console.log(data);
     
     useEffect(()=>{
         const Datas = async ()=>{

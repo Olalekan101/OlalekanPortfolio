@@ -1,4 +1,4 @@
-import {Contenfull} from "@/app/Contenful/page"
+import {Contenfull} from "@/app/Contenful/ContenfulData"
 import OutlineButton from "../Button/OutlineButton";
 
 export default async function HerobuttonNwork() {

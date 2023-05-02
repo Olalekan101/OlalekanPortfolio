@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 
 export default function HeroImgPortiart() {
     
@@ -17,10 +17,12 @@ export default function HeroImgPortiart() {
        >
        <div className=" w-[200px] h-[300px] bg-lightColor rounded-tl-[107px] rounded-tr-[29px] rounded-bl-[175px] rounded-br-[175px] mt-9 overflow-clip border-4 border-lightColor ">
             <div className=" w-full h-full " >
-                 <img
-                 src='./OlalekanImage/OlalekanPortiait.jpg'
+                 <Image
+                 src='/OlalekanImage/OlalekanPortiait.jpg'
                  alt="Web tech stack"
                  className="object-cover w-full h-full "
+                 width={200}
+                 height={300}
                  />
             </div>
         </div>
@@ -36,10 +38,12 @@ export default function HeroImgPortiart() {
        <div className=" w-[200px] h-[300px] bg-lightColor rounded-tl-[107px] rounded-tr-[29px] rounded-bl-[175px] rounded-br-[175px] mt-9 overflow-clip border-4 border-lightColor ">
 
             <div className=" relative w-full h-full " >
-                 <img
-                 src='HeroImages/codeBg1.jpg'
+                 <Image
+                 src='/HeroImages/codeBg1.jpg'
                  alt="Web tech stack"
                  className="object-cover w-full h-full  "
+                 width={200}
+                 height={300}
                  />
             </div>
         </div>
@@ -56,8 +60,8 @@ export default function HeroImgPortiart() {
        >
        <div className=" w-[200px] h-[300px] bg-lightColor rounded-tl-[107px] rounded-tr-[29px] rounded-bl-[175px] rounded-br-[175px] mt-9 overflow-clip border-4 border-lightColor ">
             <div className=" relative w-full h-full " >
-                 <img
-                 src='HeroImages/codeBg2.jpg'
+                 <Image
+                 src='/HeroImages/codeBg2.jpg'
                  alt="Web tech stack"
                  className="object-cover w-full h-full  "
                  />

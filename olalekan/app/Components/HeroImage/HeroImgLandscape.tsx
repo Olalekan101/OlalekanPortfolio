@@ -1,4 +1,3 @@
-import Contenfull from "@/app/Contenful/page"
 import Image from "next/image"
 
 export default function HeroImgLandsacape() {
@@ -7,10 +6,12 @@ export default function HeroImgLandsacape() {
     <div className=" sm:hidden -mx-4 opacity-70">
         <div className="  overflow-clip  ">
             <div className=" relative flex gap-2 justify-center " >
-                 <img
-                 src='./OlalekanImage/Olalekan.webp'
+                 <Image
+                 src='/OlalekanImage/Olalekan.webp'
                  alt="Web tech stack"
                  className="w-[100%] h-[100%] object-scale-down "
+                 width={500}
+                 height={500}
                  />
             </div>
         </div>

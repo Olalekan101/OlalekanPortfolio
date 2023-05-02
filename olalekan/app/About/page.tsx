@@ -1,13 +1,10 @@
-
-import { AboutSection } from "../Contenful/page"
+import Image from "next/image"
+import { AboutSection } from "../Contenful/ContenfulData"
 import AboutMeWriteUp from "../Components/AboutMeWriteUp/AboutMeWriteUp"
 
 export default async function About() {
 
   const data = await AboutSection() 
-
-  // console.log(data);
-     
 
   return (
     <div id="About" className="w-full md:mt-20 flex flex-col items-center justify-start" >
@@ -23,7 +20,8 @@ export default async function About() {
               {/* image */}
 
              <div className="relative w-[50px] h-[50px] md:w-[100px] md:h-[100px] rounded-full overflow-clip" >
-             <img
+             <Image
+              id={x.sys.id}
              src={"https:" + x.fields.olalekanPicture?.fields.file.url}
              alt="Website Sample images"
              className="object-cover w-full h-full"
@@ -46,14 +44,15 @@ export default async function About() {
                 <div className=" opacity-70 md:text-base text-sm font-light " ><p>Technologies I use</p>
                 </div>
                 <hr className=" w-auto h-[1px] opacity-50 my-4 " />
-                <div className=" w-[25px] h-[25px] md:w-[30px] md:h-[30px] relative flex md:gap-5 gap-3 " >
+                <div className=" w-[25px] h-[25px] md:w-[30px] md:h-[30px] relative flex md:gap-5 gap-3 opacity-70 " >
                 {x.fields.technologies?.map(y=>(
-                 <img
+                 <Image
+                 id={y.fields.file.url}
                  src={"https:" + y.fields.file.url}
                  alt="Web tech stack"
                  className="object-contain w-full h-full border-r pr-2 border-slate-300/50  "
-                 width={25}
-                 height={25}
+                 width={30}
+                 height={30}
                  />
                ))}
                 </div>
