@@ -27,7 +27,7 @@ export default function AboutMeWriteUp() {
   return (
             <div className="w-full relative">
                 { data?.map((x)=>(
-                    <div key={x.sys.id} className={` ${value ? "h-full" : "h-[300px]"} relative  overflow-clip md:h-full md:ml-[116px] mt-4 p-2 md:p-4 border-2 rounded-md border-slate-700 pb-20`}>
+                    <div key={x.sys.id} className={` ${value ? "h-full" : "h-[300px]"} relative  overflow-clip md:h-full md:ml-[var(--aboutmarginleft)] mt-4 p-2 md:p-4 border-2 rounded-md border-slate-700 pb-20`}>
                     {documentToReactComponents(x.fields.aboutMe)}
                     { mainSize <= 768 ? <div className={`absolute inset-0 bg-gradient-to-t from-darkColor ${value ? 'opacity-25': "opacity-100" }`} >
                       <div className=" flex justify-center w-full h-full items-end " >

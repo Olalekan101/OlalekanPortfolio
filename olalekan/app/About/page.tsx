@@ -42,8 +42,21 @@ export default async function About() {
               {/* About me writeup */}
               <AboutMeWriteUp/>
                {/* Technologies i use currently */}
-              <div>
-                
+              <div className=" mt-4 md:ml-[var(--aboutmarginleft)]" >
+                <div className=" opacity-70 md:text-base text-sm font-light " ><p>Technologies I use</p>
+                </div>
+                <hr className=" w-auto h-[1px] opacity-50 my-4 " />
+                <div className=" w-[25px] h-[25px] md:w-[30px] md:h-[30px] relative flex md:gap-5 gap-3 " >
+                {x.fields.technologies?.map(y=>(
+                 <img
+                 src={"https:" + y.fields.file.url}
+                 alt="Web tech stack"
+                 className="object-contain w-full h-full border-r pr-2 border-slate-300/50  "
+                 width={25}
+                 height={25}
+                 />
+               ))}
+                </div>
               </div>
 
             </div>
