@@ -7,7 +7,7 @@ export default function SocialMediaComp({className, width,height}:{className?:st
         {SocialData.map((x)=>(
             <div key={x.Name} className=" " >
                 <a href={x.Link} target="_blank" >
-                <div className={`w-[${width}] h-[${height}] opacity-50 hover:opacity-100`}>
+                <div className={`w-[${width}] h-[${height}]  `}>
                    {x.Icon}
                 </div>
                 </a>

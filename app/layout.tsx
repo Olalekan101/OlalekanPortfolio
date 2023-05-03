@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={roboto.className} >
-      <body className=' scrollbar scrollbar-thumb-darkColorLight scrollbar-track-slate-500 overflow-x-clip flex flex-col min-h-screen px-4 md:px-8 lg:px-32 bg-darkColor text-lightColor' >
+      <body className=' scrollbar scrollbar-thumb-darkColorLight scrollbar-track-darkColor/90 overflow-x-clip flex flex-col min-h-screen px-4 md:px-8 lg:px-32 bg-darkColor text-lightColor' >
         <Navbar/>
         {children}
         <Footer/>

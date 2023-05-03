@@ -19,7 +19,7 @@ export default function HeroSection() {
           </div>
 
           {/* Social Media Links Mobile */}
-          <div className=" absolute right-0 " >
+          <div className=" absolute right-0 -mx-4 pr-2 opacity-75 " >
           <SocialMediaComp className=" flex flex-col gap-2 md:hidden " height="20px" width="20px" />
           </div>
         </div>
@@ -30,7 +30,7 @@ export default function HeroSection() {
         {/* Social Media Links Desktop */}
         <div className="lg:fixed bottom-0 left-0 hidden lg:block " >
         <div className="  md:w-[32px] lg:w-[128px] " >
-        <div className=" flex flex-col justify-center items-center gap-4 " >
+        <div className=" flex flex-col justify-center items-center gap-4 opacity-50 " >
           <SocialMediaComp  className="flex flex-col gap-4" height="20px" width="20 px" />            
           <hr className="rotate-180 h-[70px] w-[2px] bg-lightColor/40" />
           </div>
