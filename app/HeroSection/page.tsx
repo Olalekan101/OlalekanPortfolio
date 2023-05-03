@@ -14,7 +14,7 @@ export default function HeroSection() {
           
           <HeroImgPortiart/>
 
-          <div className=" md:hidden flex justify-center w-full h-[150px] overflow-clip " >
+          <div className=" md:hidden flex justify-center h-[150px] overflow-y-clip -mx-4 " >
           <HeroImgLandsacape/>
           </div>
 

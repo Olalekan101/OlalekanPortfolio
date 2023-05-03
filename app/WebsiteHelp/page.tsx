@@ -7,9 +7,9 @@ import {BsHourglassSplit} from "react-icons/bs"
 export default function WebsiteHelp() {
   return (
     <div className="flex flex-col mt-10 md:mt-16">
-        <div className=" text-center md:text-xl opacity-50 " ><p>How a website can help your <span className="text-green-500 font-bold" >business</span></p></div>
+        <div className=" text-center md:text-xl opacity-50 mb-5 md:mb-7 " ><p>How a website can help your <span className="text-green-500 font-bold" >business</span></p></div>
 
-        <hr className=" h-[1px] w-auto opacity-50 my-4 md:my-6 " />
+        {/* <hr className=" h-[1px] w-auto opacity-50 my-4 md:my-6 " /> */}
 
         <div className=" flex justify-center items-end gap-2 text-4xl md:text-6xl w-full opacity-70 text-green-500 overflow-x-auto">
            <div className=" flex flex-col gap-2 items-center border border-slate-50/20 p-2 rounded-md " >

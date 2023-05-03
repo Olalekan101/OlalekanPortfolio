@@ -3,18 +3,16 @@ import Image from "next/image"
 export default function HeroImgLandsacape() {
       
   return (
-    <div className=" sm:hidden -mx-4 opacity-70">
-        <div className="  overflow-clip  ">
-            <div className=" relative flex gap-2 justify-center " >
+    <div className=" md:hidden scroll-px-8 opacity-70">
+        <div className="relative flex gap-2 justify-center" >
                  <Image
                  src='/OlalekanImage/Olalekan.webp'
                  alt="Web tech stack"
-                 className="w-[100%] h-[100%] object-scale-down "
+                 className="w-[100%] h-[100%] object-contain"
                  width={500}
                  height={500}
                  />
             </div>
-        </div>
     </div>
   )
 

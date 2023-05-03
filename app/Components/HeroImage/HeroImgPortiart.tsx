@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function HeroImgPortiart() {
     
   return (
-    <div className="relative hidden sm:flex ">
+    <div className="relative hidden md:flex ">
           {/* Loading Text Placeholder */}
 
           {/* <div className="absolute flex h-full w-full -z-50" >
