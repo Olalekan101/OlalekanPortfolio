@@ -1,5 +1,5 @@
-import { Roboto_Mono } from 'next/font/google'
 import './globals.css'
+import { Roboto_Mono } from 'next/font/google'
 import Navbar from "./Navbar/page"
 import Footer from './Footer/page'
 

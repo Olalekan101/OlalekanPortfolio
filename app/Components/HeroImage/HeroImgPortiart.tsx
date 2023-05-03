@@ -64,6 +64,8 @@ export default function HeroImgPortiart() {
                  src='/HeroImages/codeBg2.jpg'
                  alt="Web tech stack"
                  className="object-cover w-full h-full  "
+                 width={500}
+                 height={500}
                  />
             </div>
         </div>

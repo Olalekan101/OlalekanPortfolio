@@ -7,20 +7,20 @@ export default function HeroSection() {
   return (
     <>
     <div className="">
-        <div className="flex flex-col sm:flex-row relative">
+        <div className="flex flex-col md:flex-row relative">
            {/* @ts-expect-error Async Server Component */}
         <HeroSubject/>
         <div className=" relative w-full flex flex-col sm:flex-row mt-9 sm:mt-0 justify-center " >
           
           <HeroImgPortiart/>
 
-          <div className=" sm:hidden flex justify-center w-full h-[150px] overflow-clip " >
+          <div className=" md:hidden flex justify-center w-full h-[150px] overflow-clip " >
           <HeroImgLandsacape/>
           </div>
 
           {/* Social Media Links Mobile */}
           <div className=" absolute right-0 " >
-          <SocialMediaComp className=" flex flex-col gap-2 sm:hidden " height="20px" width="20px" />
+          <SocialMediaComp className=" flex flex-col gap-2 md:hidden " height="20px" width="20px" />
           </div>
         </div>
 
@@ -50,7 +50,7 @@ export default function HeroSection() {
 
          {/* background shapes mobile */}
         <div className="absolute top-0 inset-x-0 -z-10" >
-        <div className=" -translate-y-[150px] mx-auto sm:hidden bg-darkColorLight blur-2xl rounded-full h-[300px] w-[300px]" />
+        <div className=" -translate-y-[150px] mx-auto md:hidden bg-darkColorLight blur-2xl rounded-full h-[300px] w-[300px]" />
         </div>
     </>
   )

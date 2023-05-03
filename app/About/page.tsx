@@ -25,6 +25,8 @@ export default async function About() {
              src={"https:" + x.fields.olalekanPicture?.fields.file.url}
              alt="Website Sample images"
              className="object-cover w-full h-full"
+             width={100}
+             height={100}
              />
               </div>
               {/* Name */}
