@@ -24,7 +24,7 @@ export default async function HeroSubject() {
       </div>
 
       <div className=" sm:pl-4">
-      <p className=" hidden sm:block text-xs mb-2" >Motion Design Stack</p>
+      <p className=" hidden sm:block text-xs mb-2 whitespace-nowrap " >Motion Design Stack</p>
     {/* @ts-expect-error Async Server Component */}
     <MotionIcons/>
       </div>

@@ -1,4 +1,4 @@
-
+export const revalidate = 60;
 const contentful = require('contentful')
 
 const client = contentful.createClient({
@@ -23,7 +23,7 @@ export async function WebSitePortifolios(){
     const res = await client.getEntries({content_type:"webSitePortifolios"}).
     then((entry:entryType)=>{
         return entry
-    })
+    } )
     const data = res.items
     return data
   
