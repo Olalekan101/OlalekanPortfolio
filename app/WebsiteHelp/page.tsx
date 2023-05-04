@@ -16,7 +16,7 @@ export default function WebsiteHelp() {
            <div className="flex justify-center align-middle items-center text-lg text-center md:hidden text-slate-300 " ><p>How a website can help your <span className="text-green-500 font-bold" >business</span></p>
            </div>
 
-           <div className=" flex md:flex-row gap-2 md:gap-4 flex-col w-full " >
+           <div className=" flex items-center justify-center md:flex-row gap-2 md:gap-4 flex-col w-full " >
 
            <div className=" flex md:flex-col gap-2 items-center border border-slate-50/20 p-2 rounded-md " >
            <BsFillRocketFill/>
