@@ -1,9 +1,9 @@
-export const revalidate = 60; 
 import { WebSitePortifolios } from "@/app/Contenful/ContenfulData"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import {BsGithub} from "react-icons/bs"
 import Image from "next/image";
 
+export const revalidate = 60; 
 
 export default async function WebAndPhoneMockup() {
 
